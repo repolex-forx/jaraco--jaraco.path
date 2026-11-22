@@ -1,0 +1,18 @@
+[2026-11-22T08:45:07Z] === ENRICH ITERATION 1 START | repo=jaraco/jaraco.path sha=ec200227 ===
+[2026-11-22T08:45:07Z] [iter=1] PHASE START: enrich repo=jaraco/jaraco.path sha=ec200227 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ec200227-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ec200227226108abdd943d2264360619b9d35ddc.nq.gz
+[2026-11-22T08:45:19Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T08:45:19Z] [iter=1] AST store loaded triples=13673 load_secs=0 mem_mb=101 MB
+[2026-11-22T08:45:19Z] [iter=1] Step 2: Finding LSP targets mem_mb=101 MB
+[2026-11-22T08:45:19Z] [iter=1] LSP targets found call_sites=107 imports=21 extends=3 implements=0 secs=0
+[2026-11-22T08:45:19Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=101 MB
+[2026-11-22T08:45:19Z] [iter=1] Position index built positions=958 nodes_with_types=1226 secs=0 mem_mb=101 MB
+[2026-11-22T08:45:19Z] [iter=1] Step 3: Starting LSP resolution mem_mb=101 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T08:45:19Z] [iter=1] Resolving target type target_type=call_site count=107
+[2026-11-22T08:45:25Z] [iter=1] Target type resolved target_type=call_site resolved=99 errors=0 secs=5 mem_mb=102 MB
+[2026-11-22T08:45:25Z] [iter=1] Resolving target type target_type=import_statement count=21
+[2026-11-22T08:45:27Z] [iter=1] Target type resolved target_type=import_statement resolved=19 errors=0 secs=3 mem_mb=102 MB
+[2026-11-22T08:45:27Z] [iter=1] Resolving target type target_type=extends_clause count=3
+[2026-11-22T08:45:29Z] [iter=1] Target type resolved target_type=extends_clause resolved=3 errors=0 secs=1 mem_mb=102 MB
+[2026-11-22T08:45:31Z] [iter=1] Step 5: Writing final enrichment file triples=1995
+[2026-11-22T08:45:31Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ec200227226108abdd943d2264360619b9d35ddc.nq.gz size_kb=29
+[2026-11-22T08:45:31Z] [iter=1] PHASE END: enrich elapsed_s=24 elapsed_min=0.4 total_triples=1995
